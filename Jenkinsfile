@@ -11,7 +11,7 @@ pipeline {
         stage('Build JAR') {
             steps {
                 script {
-                    sh 'mvn clean package' // Use 'mvn' or 'gradle' depending on your build tool
+                    bat 'mvn clean package' // Use 'mvn' or 'gradle' depending on your build tool
                 }
             }
         }
